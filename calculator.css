@@ -1,0 +1,32 @@
+#calculator {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#extraOperations {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 70px;
+}
+#buttons {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template-areas: /* format for each button done in js file */
+            "output output output output"
+            "function clear delete divide"
+            "seven eight nine multiply"
+            "four five six subtract"
+            "one two three add"
+            "zero zero decimal equals";
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    font-size: 25px;
+}
+
+
